@@ -9,4 +9,5 @@ build/pic32mx470_curiosity/production/_ext/1360937237/main_pic32mx470.o:  \
  ../src/config/pic32mx470_curiosity/peripheral/gpio/plib_gpio.h  \
  ../src/config/pic32mx470_curiosity/peripheral/evic/plib_evic.h  \
  ../src/config/pic32mx470_curiosity/peripheral/spi/spi_master/plib_spi1_master.h  \
- ../src/config/pic32mx470_curiosity/peripheral/spi/spi_master/plib_spi_master_common.h 
+ ../src/config/pic32mx470_curiosity/peripheral/spi/spi_master/plib_spi_master_common.h  \
+ ../src/bma_4xx.h 

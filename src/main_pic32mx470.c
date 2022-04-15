@@ -52,7 +52,9 @@
 #include "definitions.h"                // SYS function prototypes
 #include <string.h>
 #include <stdio.h>
-//#include "mcp_4162.h"
+
+//#include "bma_280.h"
+#include "bma_4xx.h"
 
 // *****************************************************************************
 // *****************************************************************************
@@ -67,7 +69,7 @@
 
 char tab[32];
 
-char hello_str[] = "MCP 4162 Example\r\n";
+char hello_str[] = "BMA xxx example\r\n";
 
 /*
  * Funkcja opó?niaj?ca
@@ -104,6 +106,7 @@ int main ( void )
     /*Inicjalizacja SPI*/
     InitIO();
     
+    //bma4xx_init(0,0,0);
  
     UART1_Write(hello_str, strlen(hello_str)); 
 
@@ -118,6 +121,8 @@ int main ( void )
          * Pomocnicza funkcja delay
          */
         delay_us(1000000);
+        
+        UART1_Write((char*)"Loop", strlen("Loop"));
             
     }
 
